@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href= "Images/Logo.png" type="image/x-icon">
+    <title>Legends - Tìm kiếm</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            font-family: 'Poppins', sans-serif;
+            background: #f3f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        header {
+            background: linear-gradient(90deg, #11C0DF, #11C0DF);
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            height: 100px; 
+            width: 100px; 
+            border-radius: 20%; 
+            cursor: pointer;
+            border: 2px solid #fff; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+            transition: transform 0.3s; 
+        }
+
+        header img:hover {
+            transform: scale(1.1); 
+        }
+
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            position: relative;
+            font-size: 40px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        nav a::after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background: #ffdd57;
+            transition: width 0.3s;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        #ten {
+            position: relative;
+        }
+
+        #ten ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            list-style: none;
+            padding: 10px;
+            margin: 0;
+            text-align: left;
+            overflow: auto;
+            max-height: 300px;
+        }
+        #ten:hover ul {
+            display:block;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            overflow: visible;
+        }
+
+        #ten ul li {
+            padding: 5px 10px;
+            color: #333;
+            white-space: nowrap;
+        }
+
+        #ten ul li:hover {
+            background: #f1f1f1;
+        }
+        footer {
+            background: #11C0DF;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+        }
+
+        footer p {
+            font-size: 14px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        h1{
+            font-size: 100px;
+            z-index: 1;
+            position: relative;
+            color: #333;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;   
+            text-align: center;
+        }
+    .odanhmuc {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); 
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .odanhmuc a {
+      text-decoration: none;
+      color: black;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 50px;
+      border-color: #11C0DF;
+
+    }
+
+    .odanhmuc a:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      color: #11C0DF;
+    }
+    .odanhmuc p {
+      margin: 10px;
+      font-size: 16px;
+      text-align: center;
+    }
+    </style>
+    <body>
+        <header>
+            <a href="Trang chủ.html"><img src="Images/Logo.png" alt="Legends"></a>
+            <nav>
+                <a href="Trang giới thiệu.html">Future Coders</a>
+            </nav>
+            <nav>
+                <a href="Trang danh sách.html" >Danh sách game  </a>
+            </nav>
+            <nav>
+                <a href="Trang tìm kiếm.html" >Tìm kiếm </a>
+            </nav>
+            <nav>
+                <a href="Trang góp ý.html" >Đóng góp ý tưởng  </a>
+            </nav>
+            <nav>
+                <a href="Trò chơi trực tuyến.html" >Trò chơi trực tuyến  </a>
+            </nav>
+        </header>
+        <main>
+            <h1>Bạn muốn tìm thể loại game nào?</h1>
+            <div class="odanhmuc">
+                <a href="MOBA 5vs5.html" target="_blank">MOBA 5vs5</a>
+                <a href="Sinh tồn.html" target="_blank">Sinh tồn</a>
+                <a href="Nhập vai.html" target="_blank">Nhập vai</a> 
+                <a href="Chiến thuật.html" target="_blank">Chiến thuật</a> 
+                <a href="Giải trí.html" target="_blank">Giải trí</a> 
+                <a href="Hành động.html" target="_blank">Hành động</a>
+            </div>
+        </main>
+        <footer>
+            <p>© 2024 Legends.</p>
+        </footer>
+    </body>
+    </html>

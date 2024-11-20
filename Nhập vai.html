@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href= "Images/Logo.png" type="image/x-icon">
+  <title>Legends - MOBA 5vs5</title>
+  <style>
+    body {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
+    header {
+        background: linear-gradient(90deg, #11C0DF, #11C0DF);
+        padding: 20px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    header img {
+        height: 100px; 
+        width: 100px; 
+        border-radius: 20%; 
+        cursor: pointer;
+        border: 2px solid #fff; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        transition: transform 0.3s; 
+    }
+
+    header img:hover {
+        transform: scale(1.1); 
+    }
+
+    nav {
+        display: flex;
+        gap: 25px;
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        position: relative;
+    }
+
+    nav a::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background: #ffdd57;
+        transition: width 0.3s;
+    }
+
+    nav a:hover::after {
+        width: 100%;
+    }
+
+    #ten {
+        position: relative;
+    }
+
+    #ten ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: #fff;
+        border: 1px solid #ccc;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        list-style: none;
+        padding: 10px;
+        margin: 0;
+    }
+    #ten:hover ul {
+        display: grid;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    #ten ul li {
+        padding: 5px 1px;
+        color: #333;
+    }
+
+    #ten ul li:hover {
+        background: #f1f1f1;
+    }
+    footer {
+        background: #11C0DF;
+        color: #fff;
+        text-align: center;
+        padding: 15px;
+    }
+    footer p {
+        font-size: 14px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .ogame {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr); 
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .ogame a {
+      text-decoration: none;
+      color: black;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .ogame a:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .ogame img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .ogame p {
+      margin: 10px;
+      font-size: 16px;
+      text-align: center;
+    }
+    h1{
+            font-size: 50px;
+            z-index: 1;
+            position: relative;
+            color: #333;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;   
+        }
+   
+  </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="Images/Logo.png" alt="Legends">
+        </a>
+        <nav>
+            <a href="#ten" id="ten">Future Coders
+                <ul>
+                    <li>Nguyễn Thanh Bình</li>
+                    <li>Trịnh Minh Huy</li>
+                    <li>Phạm Nguyễn Hoàng Kim</li>
+                    <li>Võ Thị Xuân Nghi</li>
+                    <li>Lý Thành Thông</li>
+                </ul>
+            </a>
+            
+        </nav>
+    </header>
+    <main>
+        <h1>GAME NHẬP VAI</h1>
+  <div class="ogame">
+    <a href="t https://download.com.vn/genshin-impact-151020" target="_blank">
+        <img src="Images/Genshin.jpg" alt="Genshin Impact">
+        <p>Genshin Impact</p>
+    </a>
+    <a href=" https://download.com.vn/download/honkai-impact-3-124420" target="_blank">
+        <img src="Images/Honkai Impact 3.jpg" alt="Honkai Impact 3">
+        <p>Honkai Impact 3</p>
+    </a>
+    <a href="https://download.com.vn/minecraft-44205" target="_blank">
+        <img src="Images/Minecraft.jpg" alt="Minecraft">
+        <p>Minecraft</p>
+    </a>
+    <a href="https://download.com.vn/tai-xuong-gta-vice-city-tren-windows-157127" target="_blank">
+        <img src="Images/GTA Vice City.png" alt="GTA Vice City">
+        <p>GTA Vice City</p>
+    </a>
+    <a href=" https://download.com.vn/play-together-cho-android-154349" target="_blank">
+        <img src="Images/Play Together.jpg" alt="Play Together">
+        <p>Play Together</p>
+    </a>
+    <a href="https://download.com.vn/eyes-the-horror-game-99629" target="_blank">
+        <img src="Images/Eyes Horror.webp" alt="Eyes Horror">
+        <p>Eyes Horror</p>
+    </a>
+    <a href="https://download.com.vn/game-suspects-mystery-mansion-154737" target="_blank">
+        <img src="Images/Suspects Mystery Mansion.jpg" alt="Suspects Mystery Mansion">
+        <p>Suspects Mystery Mansion</p>
+    </a>
+    <a href="https://download.com.vn/adorable-home-147343" target="_blank">
+        <img src="Images/Adorable Home.png" alt="Adorable Home">
+        <p>Adorable Home</p>
+    </a>
+    </div>
+</main>
+<footer>
+  <p>© 2024 Legends.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href= "Images/Logo.png" type="image/x-icon">
+    <title>Legends - Góp ý</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            font-family: 'Poppins', sans-serif;
+            background: #f3f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        header {
+            background: linear-gradient(90deg, #11C0DF, #11C0DF);
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            height: 100px; 
+            width: 100px; 
+            border-radius: 20%; 
+            cursor: pointer;
+            border: 2px solid #fff; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+            transition: transform 0.3s; 
+        }
+
+        header img:hover {
+            transform: scale(1.1); 
+        }
+
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            position: relative;
+            font-size: 40px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        nav a::after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background: #ffdd57;
+            transition: width 0.3s;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        #ten {
+            position: relative;
+        }
+
+        #ten ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            list-style: none;
+            padding: 10px;
+            margin: 0;
+            text-align: left;
+            overflow: auto;
+            max-height: 300px;
+        }
+        #ten:hover ul {
+            display:block;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            overflow: visible;
+        }
+
+        #ten ul li {
+            padding: 5px 10px;
+            color: #333;
+            white-space: nowrap;
+        }
+
+        #ten ul li:hover {
+            background: #f1f1f1;
+        }
+
+        .loicamon {
+            text-align: center;
+            padding: 60px 20px;
+            background: url('hero-background.jpg') no-repeat center/cover;
+            color: #fff;
+            position: relative;
+        }
+
+        .loicamon::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .loicamon h1 {
+            font-size: 100px;
+            z-index: 1;
+            position: relative;
+            color: #333;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .loicamon p {
+            margin-top: 10px;
+            font-size: 18px;
+            z-index: 1;
+            position: relative;
+        }
+        .gopy {
+            display: inline-block; 
+            text-align: center;
+            font-size: 24px; 
+            font-weight: bold;
+            margin-top: 20px;
+            color: rgb(0, 0, 0); 
+            text-decoration: none; 
+            padding: 10px 20px; 
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .gopyk:hover {
+            text-decoration: underline; 
+        }
+
+        footer {
+            background: #11C0DF;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="Trang chủ.html"><img src="Images/Logo.png" alt="Legends"></a>
+        <nav>
+            <a href="Trang giới thiệu.html">Future Coders</a>
+        </nav>
+        <nav>
+            <a href="Trang danh sách.html" >Danh sách game  </a>
+        </nav>
+        <nav>
+            <a href="Trang tìm kiếm.html" >Tìm kiếm </a>
+        </nav>
+        <nav>
+            <a href="Trang góp ý.html" >Đóng góp ý tưởng  </a>
+        </nav>
+        <nav>
+            <a href="Trò chơi trực tuyến.html" >Trò chơi trực tuyến  </a>
+        </nav>
+    </header>
+    <main>
+        <section class="loicamon">
+            <h1>Legends Xin cảm ơn</h1>
+            <p style="color: #333;font-size: 50px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Nhóm Future Coders xin cảm ơn mọi người rất nhiều vì đã dành sự quan tâm đến trang Web của nhóm. 
+                Tuy đã cố gắng hết sức nhưng chắc chắn trong quá trình hoàn thiện Legends, nhóm Future Coders vẫn không thể tránh khỏi sai sót. 
+                Nếu bạn có điều gì muốn góp ý, xin hãy mạnh dạn chia sẻ để trang Web ngày càng hoàn thiện hơn</p>
+        </section>
+
+    </main>
+    <a href="https://forms.gle/ovfP4PCWFuuWZRfq9" class="gopy" >Góp ý</a> 
+    <footer>
+        <p>© 2024 Legends.</p>
+    </footer>
+</body>
+</html>

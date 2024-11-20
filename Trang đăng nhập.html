@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng nhập</title>
+    <link rel="icon" href= "Images/Logo.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-image: url(Images/Nền\ trang\ đăng\ nhập.png);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            position: relative; 
+            z-index: 1; 
+        }
+        .khungDangnhap {
+            background-color: rgba(255, 255, 255, 0.9); 
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
+            width: 400px;
+            position: relative;
+            z-index: 10;
+        }
+        h2 {
+            font-size: 32px;
+            font-weight: bold; 
+            color: #000; 
+            text-align: center;        
+        }
+        input[type="text"], input[type="password"] {
+            width: 80%;
+            padding: 15px;
+            margin: 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: #28a745;
+            border: none;
+            color: white;
+            font-size: 18px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #218838;
+
+        }
+        .hoTen {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center; 
+        }
+    </style>
+</head>
+<body>
+    <div class="khungDangnhap">
+        <h2>Đăng nhập</h2>
+        <form action="#" onsubmit="return chuyenDenTrangChu(event)">
+        <form action="/submit-login" method="POST">
+            <div class="hoTen">
+                <input type="text" name="Họ và Tên" placeholder="Họ và Tên" required>
+            </div>
+            <div class="hoTen">
+                <input type="password" name="MSSV" placeholder="MSSV" required>
+            </div>
+            <button type="submit"> Đăng nhập</button>
+        </form>
+    </div>
+    <script>
+        function chuyenDenTrangChu(event) {
+            event.preventDefault();
+            window.location.href = "https://www.youtube.com/watch?v=55iZs88gxvw"; 
+        }
+    </script>
+</body>
+</html>
